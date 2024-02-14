@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Head from "next/head";
 import "nextra-theme-blog/style.css";
 import "../styles/main.css";
@@ -21,6 +23,8 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
