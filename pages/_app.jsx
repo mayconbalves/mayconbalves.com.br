@@ -1,9 +1,9 @@
-import { ChakraProvider } from '@chakra-ui/react';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import Head from "next/head";
-import "nextra-theme-blog/style.css";
-import "../styles/main.css";
+import { ChakraProvider } from '@chakra-ui/react'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import Head from 'next/head'
+import 'nextra-theme-blog/style.css'
+import '../styles/main.css'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -29,5 +29,5 @@ export default function App({ Component, pageProps }) {
       <Analytics />
       <SpeedInsights />
     </>
-  );
+  )
 }
